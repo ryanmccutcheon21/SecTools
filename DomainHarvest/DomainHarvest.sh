@@ -1,5 +1,10 @@
 #!/bin/bash
 
+# DomainHarvest
+# Author: Ryan McCutcheon
+# Version: 1.0
+# Date: January 10, 2024
+
 usage() {
   echo "Usage: $0 [-t <target>] [-l] [-c] [-h] [-f] [-w <wordlist>] [-s <subdomains_file>] [-r] [-rd <depth>]"
   echo "Options:"
