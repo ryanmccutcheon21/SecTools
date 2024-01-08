@@ -11,7 +11,7 @@ DomainHarvest is a versatile domain enumeration tool designed to collect compreh
 Clone the repository to your local machine:
 ```
 git clone https://github.com/your-username/SecTools/DomainHarvest.git
-cd SecTools
+cd DomainHarvest
 chmod +x DomainHarvest.sh
 ln -s "$(pwd)/DomainHarvest.sh" /usr/local/bin/DomainHarvest
 ```
