@@ -11,14 +11,21 @@ usage() {
 }
 
 tool_intro() {
+	echo "====================================================================="
+	echo "====================================================================="
   echo "Custom Domain Enumeration Tool"
   echo "This tool automates the process of collecting subdomains using various sources."
   echo "It supports multiple functionalities such as running theHarvester, extracting, and sorting subdomains."
+  echo "====================================================================="
+  echo "Example: DomainHarvest -t <target> -l -c"
+  echo "====================================================================="
   echo "Options:"
   echo "  -t <target>        Set the target domain."
   echo "  -l                Show all subdomains."
   echo "  -c                Show the count of domains found."
   echo "  -h                Show this help message with tool introduction."
+  echo "====================================================================="
+  echo "====================================================================="
   exit 0
 }
 
