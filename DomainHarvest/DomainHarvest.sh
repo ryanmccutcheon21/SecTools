@@ -4,6 +4,11 @@
 # Author: Ryan McCutcheon
 # Version: 1.0
 # Date: January 10, 2024
+#
+# Disclaimer: This tool is intended for legal and ethical use only. 
+# It should be used responsibly and in compliance with applicable laws and regulations. 
+# The author is not responsible for any misuse or illegal activities conducted with this tool.
+
 
 usage() {
   echo "Usage: $0 [-t <target>] [-l] [-c] [-h] [-f] [-w <wordlist>] [-s <subdomains_file>] [-r] [-rd <depth>]"
