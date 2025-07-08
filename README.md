@@ -2,6 +2,7 @@
 Explore a collection of cybersecurity tools, from penetration testing to bug bounty hunting. Empower your security assessments with a diverse set of utilities.
 
 Tool Name: rbcd-auto.py
+
 Description:
 rbcd-auto.py is a Python-based exploitation tool designed to automate Resource-Based Constrained Delegation (RBCD) attacks against misconfigured Active Directory environments. It supports both:
   - Standard RBCD using machine account creation (when ms-DS-MachineAccountQuota > 0)
