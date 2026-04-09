@@ -1,0 +1,8 @@
+requests
+numpy
+matplotlib
+scikit-learn
+openai
+anthropic
+torch
+torchvision
