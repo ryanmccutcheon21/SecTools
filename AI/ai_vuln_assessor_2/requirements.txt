@@ -1,0 +1,11 @@
+requests
+numpy
+matplotlib
+scikit-learn
+openai
+anthropic
+torch
+torchvision
+adversarial-robustness-toolbox
+opacus
+htb-ai-library
