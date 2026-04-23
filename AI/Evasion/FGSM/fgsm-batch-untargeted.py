@@ -1,42 +1,4 @@
-# Check for virtual environments and set up pip install
-import os
-import subprocess
-import sys
 from typing import Dict
-
-venv_paths = [
-    os.path.expanduser("~/venvs/ai"),
-    os.path.join(os.getcwd(), ".venv")
-]
-
-venv_path = None
-for path in venv_paths:
-    if os.path.exists(path):
-        venv_path = path
-        break
-
-if venv_path is None:
-    venv_path = os.path.join(os.getcwd(), ".venv")
-    # Create virtual environment
-    subprocess.run([sys.executable, "-m", "venv", venv_path])
-
-# Activate the virtual environment and install dependencies
-activate_script = os.path.join(venv_path, "bin", "activate")
-command = f"source {activate_script} && pip install --upgrade git+https://github.com/PandaSt0rm/htb-ai-library && pip install --upgrade torch torchvision numpy matplotlib scikit-learn jupyterlab notebook pandas tqdm"
-print("Activating virtual environment and installing/updating dependencies...")
-subprocess.run(["bash", "-c", command])
-
-# Activate the venv in the current Python process
-os.environ["VIRTUAL_ENV"] = venv_path
-bin_path = os.path.join(venv_path, "bin")
-os.environ["PATH"] = bin_path + ":" + os.environ.get("PATH", "")
-site_packages = os.path.join(venv_path, "lib", f"python{sys.version_info.major}.{sys.version_info.minor}", "site-packages")
-sys.path.insert(0, site_packages)
-
-print("\n" + "="*60)
-print("Dependencies successfully installed.")
-
-import random
 import numpy as np
 import torch
 from torch import nn, Tensor
