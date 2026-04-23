@@ -1,7 +1,4 @@
-# Check for virtual environments and set up pip install
 import os
-import subprocess
-import sys
 import argparse, json, time
 from dataclasses import dataclass
 from typing import Dict, Tuple
